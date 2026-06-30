@@ -4,12 +4,11 @@ import Header from './components/Header';
 import MovieList from './components/MovieList';
 
 function App() {
-	let [currentGenre, updateGenre] = useState(0);
+	let [currentGenre, updateGenre] = useState([]);
 	return (
 		<>
 			<Header currentGenre={currentGenre} updateGenre={updateGenre}/>
-			<h2></h2>
-			<MovieList />
+			<MovieList currentGenre={currentGenre} />
 		</>
 )
 }
